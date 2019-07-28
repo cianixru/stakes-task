@@ -1,0 +1,11 @@
+{
+  "name": "@sha/cargs",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {},
+  "devDependencies": {}
+}

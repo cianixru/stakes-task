@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "targets": { "browsers": "last 2 versions" } }
+    ],
+    "@babel/react",
+    "@babel/typescript"
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    "@babel/plugin-transform-regenerator",
+    "@babel/plugin-proposal-export-default-from",
+    "react-hot-loader/babel"
+  ]
+}

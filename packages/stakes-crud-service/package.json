@@ -1,0 +1,33 @@
+{
+  "name": "stakes-crud-service",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git"
+  },
+  "homepage": "",
+  "scripts": {
+    "start": "ts-node-dev  --transpileOnly -- ./src/index.ts --data=btce-develop",
+    "stage": "ts-node-dev  --transpileOnly -- ./src/index.ts --data=btce-stage",
+    "prod": "ts-node  --transpileOnly  -- ./src/index.ts --data=btce-prod",
+    "jest": "jest test/newsFeed.test.ts --detectOpenHandles"
+  },
+  "engines": {
+    "node": "=10.6.0",
+    "npm": ">=5.6.0"
+  },
+  "dependencies": {
+    "@sha/configurable": "0.1.0",
+    "@sha/fsa": "0.1.0",
+    "@sha/random": "0.1.0",
+    "@sha/utils": "0.1.0",
+    "@types/jsdom": "^12.2.3",
+    "stakes-crud-iso": "^0.0.1",
+    "fastify": "^2.5.0",
+    "fastify-auto-push": "^0.4.0",
+    "fastify-compress": "^0.10.0",
+    "fastify-cors": "^2.1.3",
+    "fastify-static": "^2.5.0",
+    "ts-node-dev": "^1.0.0-pre.32"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@sha/configurable",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@sha/cargs": "^0.1.0",
+    "@sha/file-data": "^0.1.0",
+    "@sha/signal": "0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "jest --forceExit"
+  }
+}

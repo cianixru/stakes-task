@@ -1,0 +1,16 @@
+{
+  "name": "@sha/signal",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "typings": "src",
+  "dependencies": {
+    "@sha/utils": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "tsc -w"
+  }
+}

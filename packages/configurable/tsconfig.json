@@ -1,0 +1,9 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        // Target latest version of ECMAScript.
+        "target": "es6",
+        "module": "commonjs",
+        "emitDecoratorMetadata": true
+    }
+}

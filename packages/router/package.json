@@ -1,0 +1,31 @@
+{
+  "name": "@sha/router",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "homepage": "",
+  "scripts": {
+    "build": "webpack --config ./webpack.config/prod.js",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "styles": "sass ../styles/desktop/src/scss/main.scss ./public/assets/css/main.css",
+    "mainnet": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config ./webpack.config/dev.js  --inline --history-api-fallback ",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config ./webpack.config/dev.js  --inline --history-api-fallback "
+  },
+  "engines": {
+    "node": "=10.6.0",
+    "npm": ">=5.6.0"
+  },
+  "dependencies": {
+    "@sha/fsa": "0.1.0",
+    "@sha/random": "0.1.0",
+    "@sha/react-fp": "0.1.0",
+    "@sha/utils": "0.1.0"
+  },
+  "devDependencies": {}
+}

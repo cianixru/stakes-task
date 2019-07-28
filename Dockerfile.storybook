@@ -1,0 +1,21 @@
+FROM IMAGEAPI
+
+#FROM node:10-alpine as builder
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app/
+
+# Install dependencies
+RUN npm i
+
+RUN cd packages/auctions-front ; npm i --save react@next ; \
+    npm i --save react-dom@next ; \
+    npx lerna bootstrap
+
+# start command
+
+#CMD [ "npx", "storybook"]
+CMD [ "npm" , "run" , "storybook"]

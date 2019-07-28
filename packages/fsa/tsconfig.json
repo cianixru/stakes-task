@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "rootDirs": ["./src/"],
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "target": "ES2015",
+        "jsx": "react",
+
+        "moduleResolution" : "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "declarationDir": "./dist/",
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "dom",
+            "scripthost",
+            "es2015.core",
+            "es2015.collection",
+            "es2015.generator",
+            "es2015.iterable",
+            "es2015.promise",
+            "es2015.proxy",
+            "es2015.reflect",
+            "es2015.symbol",
+            "es2015.symbol.wellknown"
+        ]
+    },
+
+    "files": [
+        "./src/index.ts"
+    ]
+
+}

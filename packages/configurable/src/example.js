@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {value: true});
+var index_1 = require("./index");
+var index_2 = require("./index");
+var path = require("path");
+var repo = index_1.fileDataRepository(path.join('a', 'b', 'd', 'e', 'data.json'), {obj: {a: 17}});
+console.log(index_2.default.getAppDataPath());
+console.log(index_2.default.getBasePath());
+console.log(index_2.default.getDistPath());
+console.log(repo.getData());

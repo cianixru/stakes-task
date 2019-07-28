@@ -1,0 +1,29 @@
+{
+  "name": "stakes-crud-front",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git"
+  },
+  "homepage": "",
+  "scripts": {
+    "start": "node ../../node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config ./webpack.config/local.js --inline --history-api-fallback",
+    "develop": "node ../../node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config ./webpack.config/dev.js --inline --history-api-fallback",
+    "stage": "node ../../node_modules/webpack-dev-server/bin/webpack-dev-server.js  --config ./webpack.config/stage.js --inline --history-api-fallback",
+    "build": "node ../../node_modules/webpack/bin/webpack.js --config ./webpack.config/prod.js",
+    "storybook": "start-storybook -s ./public -p 6006",
+    "test": "jest"
+  },
+  "engines": {
+    "node": "=10.6.0",
+    "npm": ">=5.6.0"
+  },
+  "dependencies": {
+    "@sha/fsa": "0.1.0",
+    "@sha/random": "0.1.0",
+    "@sha/react-fp": "0.1.0",
+    "@sha/router": "0.0.1",
+    "@sha/utils": "0.1.0",
+    "antd": "^3.20.6",
+    "stakes-crud-iso": "0.0.1"
+  }
+}
